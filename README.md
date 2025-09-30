@@ -1,8 +1,6 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
-
 Hello World 
 
 ### W2
