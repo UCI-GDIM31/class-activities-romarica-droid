@@ -4,7 +4,11 @@
 Hello World 
 
 ### W2
-Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+1. RGB variables are floats instead of int values since the computer has to calculate very precise color combinations between red, green, blue. This means that the code needs to make the color values floats in order to actually generate the precise color. Additonally, RGB can only be a number between 0.0 and 1.0, forcing the value to be an integer. 
+
+2. The _bonuce variable is an int because its only caluclating the number of bouncess the ball has done, only being able to be a whole number. You can't have half a bounce or a quater of a bounce, making the _bonuce variable an int.
+
+3.  THe error on step 4 of step 2 states that a double can't implicty convert to a float, meaning that all floats that are in the form of a double need to have an f at the end to cast it properly.
 
 ## Open-Source Assets
 ### W1
