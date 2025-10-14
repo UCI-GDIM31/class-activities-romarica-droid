@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Ball : MonoBehaviour
+public class Ball: MonoBehaviour
 {
     [SerializeField] private TMP_Text _bouncesText;
     [SerializeField] private TMP_Text _brightnessText;

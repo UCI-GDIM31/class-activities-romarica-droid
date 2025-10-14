@@ -10,7 +10,19 @@ Hello World
 
 3.  THe error on step 4 of step 2 states that a double can't implicty convert to a float, meaning that all floats that are in the form of a double need to have an f at the end to cast it properly.
 
+### W3
+(Rhytmn game method) -  Table #2
+1. The method should take a float with the time the player hit the note, then check if the player hit the note at the right time which would return true, other wise return a false.
+
+
+
+Individual
+1. Classes are like catagories and all of the componets within the class are like the items within a category. For instance, a "colors" category would have componets like red, blue, and green all contained with the class.
+
+2. Since the balls brightness is increasing with the average value of linear velocity, the ball is become brigther and brighter with each bounce.
+
 ## Open-Source Assets
 ### W1
+
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
 - Low-poly environment: https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153 
