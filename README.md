@@ -22,11 +22,14 @@ Individual
 2. Since the balls brightness is increasing with the average value of linear velocity, the ball is become brigther and brighter with each bounce.
 
 
-### W$
+### W4
 () - Table #2
 1. In line 5, _moveSpeed declares a new variable that sets its value at 1.0f. Then, on line 22, a new float is created named translations that takes the vertical axis and mutiplies it by both the float _moveSpeed and Time.deltaTime. Finally, on line 25, the line calls transform, and uses the translate method (alters the shape) to set the last value to the translatino variable.
 
-2.
+Individual
+1. For the collider activity, we decided to to have set a rigidbody on both teh cat and ball, since those 2 objects will be colliding and will need to check the collsion of other objects. Futhurmore, we set isTrigger on he goal since the goal needs to trigger whenever the collides with the collider of the ball
+
+2. Several times my ball and cat fell through the floor, and I fixed the issue by turning off the isTrigger in my confusion and also lifting the cat and ball up so they did not clip through the floor. 
 
 
 ## Open-Source Assets
