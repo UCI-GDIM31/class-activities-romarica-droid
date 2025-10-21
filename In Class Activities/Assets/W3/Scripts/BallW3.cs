@@ -38,7 +38,7 @@ public class BallW3 : MonoBehaviour
 
     // STEP 8 -----------------------------------------------------------------
     // The GetColorMultiplier method creates a multiplier that will be used to
-    //      make the balls brighter each time they bounce, IF they are moving
+    //      make the balls brighter each time theyx bounce, IF they are moving
     //      at a certain speed.
     // Input: two floats - one for the X speed of the ball, one for the Y speed
     // Output: a multiplier number (with decimals)
