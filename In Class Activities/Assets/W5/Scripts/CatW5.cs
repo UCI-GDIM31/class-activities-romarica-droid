@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class CatW5 : MonoBehaviour
 {
@@ -45,9 +46,34 @@ public class CatW5 : MonoBehaviour
 
         Vector3 translation = Vector3.zero;
         
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            if (_flipWSControls)
+            {
+                transform.Translate(-Vector3.forward * _moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime); 
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            if(_flipWSControls)
+            {
+                transform.Translate(-Vector3.back * _moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector3.back * _moveSpeed * Time.deltaTime);
+            }
+                
+        }
+
+        
 
 
-        // STEP 1 & 2 ---------------------------------------------------------
+            // STEP 1 & 2 ---------------------------------------------------------
 
         float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
         transform.Rotate(0, rotation, 0);

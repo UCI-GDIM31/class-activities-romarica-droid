@@ -31,6 +31,21 @@ Individual
 
 2. Several times my ball and cat fell through the floor, and I fixed the issue by turning off the isTrigger in my confusion and also lifting the cat and ball up so they did not clip through the floor. 
 
+### W5
+Collabrative Learning 
+Question: What is the key difference between the transform componet and vectors?
+Transform - attached to the game object
+Vector3 - individual numbers
+
+The transform componet are values directly connected to a game object that determines its location, whereas a vector3 is a set of individual numbers.   
+
+Notes for group assigment
+The plan:
+-create a target transform variable and a deer gameobject
+-make a vector3 variable called destination
+-Use the NavMeshAgent at the start to create a desination
+-Use the destination to move the deer towards the target by getting the NavMeshAgent and updating the position each frame
+
 
 ## Open-Source Assets
 ### W1
