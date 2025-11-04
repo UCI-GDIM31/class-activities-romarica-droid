@@ -46,6 +46,19 @@ The plan:
 -Use the NavMeshAgent at the start to create a desination
 -Use the destination to move the deer towards the target by getting the NavMeshAgent and updating the position each frame
 
+### W6
+Table 2 
+(Did Unity Engine sectino with Evrin)
+https://docs.google.com/document/d/1g257orHX8bQNaC57k1DMqCDIpAd95jDwpQPqJiA4ks8/edit?usp=sharing
+
+Partner Assigment
+1. Notes:
+-Create GameObject for the player
+-Create float for speed
+-Create an update method where the player's position is constantly checked
+-Create a void method where the bat stop, containing 
+-Create a void method where the bat pursues the player, containing a translation of the bat towards the player
+
 
 ## Open-Source Assets
 ### W1
