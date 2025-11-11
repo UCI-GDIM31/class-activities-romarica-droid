@@ -55,10 +55,18 @@ Partner Assigment
 1. Notes:
 -Create GameObject for the player
 -Create float for speed
--Create an update method where the player's position is constantly checked
--Create a void method where the bat stop, containing 
--Create a void method where the bat pursues the player, containing a translation of the bat towards the player
+-Create a void method where the bat stop, stopping the bat.
+-Create a void method where the bat pursues the player, setting the player transform to the give transform.
+-Create a Update method that translate the bat to the player
 
+
+### W7
+Table 2
+(Worked on Physics section with Evrin)
+https://docs.google.com/document/d/1G_ZSCA2-UVtHll1uaPGUIZ9OZg3-oBIxvR5bJl7Vl6k/edit?usp=sharing
+
+Partner Assigment
+1. What was wrong in step 2 was that code was not moving locally. To fix this issue, we added transform.position.foward to make the mouse move locally. 
 
 ## Open-Source Assets
 ### W1

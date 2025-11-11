@@ -69,12 +69,32 @@ public class MuskratW7 : MonoBehaviour
         if(_orbitMode)
         {
             _animator.SetBool("flying", false);
-            if(_rigidbody.linearVelocity.z > 0)
+            if(Math.Abs(_rigidbody.linearVelocity.z > 0))
             {
                 _animator.SetBool("running", true);
-            }else if ()
+            } else
             {
                 _animator.SetBool("running", false);
+            }
+        }
+        else
+        {
+            if (Mathf.Abs(_rigidbody.linearVelocity.z > 0))
+            {
+                _animator.SetBool("running", true);
+            }
+            else
+            {
+                _animator.SetBool("running", false);
+            }
+
+            if (Mathf.Abs(_rigidbody.linearVelocity.y > 0))
+            {
+                _animator.SetBool("flying", true);
+            }
+            else
+            {
+                _animator.SetBool("flying", false);
             }
         }
 
@@ -109,7 +129,7 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position(movement * Vector3.forward * _moveSpeed * Time.deltaTime);
+        transform.position *= movement * transform.position.forward * _moveSpeed * Time.deltaTime;
 
         // STEP 2 -------------------------------------------------------------
 
@@ -120,25 +140,22 @@ public class MuskratW7 : MonoBehaviour
         // Use _rigidbody.linearVelocity.
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
-        if(_rigidbody.linearVelocity.z > 0 && _rigidbody.linearVelocity.y == 0)
+        if(Mathf.Abs(_rigidbody.linearVelocity.z > 0))
         {
-            _animator.setBool("flying", false);
-            _animator.setBool("running", true);
-        }
-        else if(_rigidbody.linearVelocity.z > 0 && _rigidbody.linearVelocity.y > 0)
-        {
-            _animator.setBool("flying", true);
-            _animator.setBool("running", true);
-        }
-        else if(_rigidbody.linearVelocity.z == 0 && _rigidbody.linearVelocity.y >0)
-        {
-            _animator.setBool("flying", true);
-            _animator.setBool("running", false);
+            _animator.SetBool("running", true);
         }
         else
         {
-            _animator.setBool("flying", false);
-            _animator.setBool("running", false);
+            _animator.SetBool("running", false);
+        }
+
+        if (Mathf.Abs(_rigidbody.linearVelocity.y > 0))
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
         }
         
         // STEP 4 -------------------------------------------------------------
